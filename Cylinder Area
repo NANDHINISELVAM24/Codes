@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the radius of Cylinder: ");
+        int r = scanner.nextInt();
+        
+        System.out.print("Enter the height of Cylinder: ");
+        int h = scanner.nextInt();
+
+        double pi = 3.142;
+        
+        double area = 2*pi*r*(r+h);
+
+        System.out.printf("%.4f", area);
+
+        scanner.close();
+    }
+}
